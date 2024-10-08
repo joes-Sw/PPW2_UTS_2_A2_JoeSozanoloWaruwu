@@ -1,4 +1,4 @@
-@extends('layouts')
+@extends('products.layouts')
 
 @section('content')
 
@@ -35,7 +35,7 @@
                             <td>{{ $product->quantity }}</td>
                             <td>{{ $product->price }}</td>
                             <td>
-                                <form action="{{ route('products.destroy', $product->id) }}" method="post">
+                                <form action="{{ route('products.destroy', $product->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
 

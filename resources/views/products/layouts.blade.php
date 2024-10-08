@@ -12,6 +12,7 @@
 <body>   
 
     <div class="container">
+        @yield('content')
         <h3 class=" mt-3">Laravel 10 CRUD Application - PPW 2</h3>
     </div>
 
